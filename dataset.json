@@ -1,0 +1,897 @@
+{
+    "intents": [{
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Greetings!",
+                "How are you doing today?",
+                "How is your day?",
+                "Good day",
+                "Good morning",
+                "Hope you have a lovely and beautiful morning",
+                "What a beautiful and pleasant day",
+                "Have a pleasant morning",
+                "How is it going today?"
+            ],
+            "responses": [
+                "Hey",
+                "Hello, thanks for visiting",
+                "Hi there, what can I do for you?",
+                "Hi there, how can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Have a nice day", "See you later", "Good night", "Bye bye", "Talk to you later", "See you sometime later", "Have a nice day", "Talk to you soon"],
+            "responses": [
+                "See you later, thanks for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {
+            "tag": "HOD",
+            "patterns": [
+                "Who is the head of the department?",
+                "Who is the HOD?",
+                "What is the name of the Head of the Department?",
+                "What is the name of the HOD?"
+            ],
+            "responses": [
+                "The Head of the department is Brig Gen Md Abdur Razzak, SUP, psc",
+                "The name of the head of the department is Brig Gen Md Abdur Razzak",
+                "Brig Gen Md Abdur Razzak is the head of the department"
+            ]
+        },
+        {
+            "tag": "HOD office location",
+            "patterns": [
+                "Where is the office of the head of the department?",
+                "Where is the office of the HOD?",
+                "Can you tell me the way to the office of the head of the department?",
+                "Can you tell me the way to the office of the HOD"
+            ],
+            "responses": [
+                "Please turn back and go to the left, you will find the office of the head of the department"
+            ]
+        },
+        {
+            "tag": "G2 Sir",
+            "patterns": [
+                "Who is the G2?",
+                "What is the name of the G2?"
+            ],
+            "responses": [
+                "The G2 of CSE department is Maj Md Mahbubar Rahman",
+                "The name of the G2 of the department of CSE is Maj Md Mahbubar Rahman",
+                "Maj Md Mahbubar Rahman is the head of the department"
+            ]
+        },
+        {
+            "tag": "Commandant",
+            "patterns": [
+                "Who is the the Commandant of the MIST?",
+                "What is the name of the Commandant of the MIST?"
+            ],
+            "responses": ["The current commandant of MIST is Maj Gen Md Wahid-Uz-Zaman, BSP, ndc, aowc, psc, te",
+                "Currently, Maj Gen Md Wahid-Uz-Zaman, BSP, ndc, aowc, psc, te is our Commandant.",
+                "Our Current Commandant is Maj Gen Md Wahid-Uz-Zaman, BSP, ndc, aowc, psc, te",
+                "Maj Gen Md Wahid-Uz-Zaman, BSP, ndc, aowc, psc, te is currently the commandant of MIST."
+            ]
+        },
+
+        {
+            "tag": "Location",
+            "patterns": [
+                "Where is MIST located?",
+                "Where is MIST situated?",
+                "What is the location of MIST?",
+                "Where is MIST?"
+            ],
+            "responses": ["The location of MIST is in the Mirpur DOHS army cantonment.",
+                "Mist is located in the center of the Mirpur DOHS Army base.",
+                "It is located in Mirpur Cantonment"
+            ]
+        },
+        {
+            "tag": "MIST",
+            "patterns": [
+                "What is the full form of MIST?",
+                "What does MIST stands for ?",
+                "What is the full meaning of MIST?"
+
+            ],
+            "responses": ["It may seem fog to you but its full form is Military Institute of Science & Technology",
+                "MIST stands for Military Institute of Science & Technology",
+                "This MIST doesn’t mean fog, rather it means Military Institute of Science & Technology"
+            ]
+        },
+        {
+            "tag": "13",
+            "patterns": [
+                "How many departments are there in MIST?",
+                "What is the total number of departments in MIST",
+                "How many departments does MIST consist of?"
+
+            ],
+            "responses": [
+                "There are currently 13 departments here in MIST",
+                "MIST has 13 departments in total",
+                "It consists of 13 departments.",
+                "MIST has a total number of 13 departments within it currently operational."
+            ]
+        },
+        {
+            "tag": "13names",
+            "patterns": [
+                "What are the names of the departments in MIST",
+                "Name all the departments of MIST",
+                "Can you tell me the names of the departments in MIST"
+
+            ],
+            "responses": [
+                "The departments are as follows: CSE, EECE, ME, IPE, Architecture, CE, BME, AE, PME, EWCE, FH, NAME and NSE"
+            ]
+        },
+        {
+            "tag": "HeadCSE",
+            "patterns": [
+                "Whos is the Head of the CSE department?",
+                "What is the name of the head of the CSE department?",
+                "Can you tell me the name of the head of the CSE department?"
+
+            ],
+            "responses": [
+                "The current Head of the department of CSE is Brig Gen Md Abdur Razzak, SUP, psc",
+                "Currently, Brig Gen Md Abdur Razzak, SUP, psc is the head of the department of CSE.",
+                "The Current head of the department of CSE is Brig Gen Md Abdur Razzak, SUP, psc",
+                "Brig Gen Md Abdur Razzak, SUP, psc is currently the head of the department of CSE."
+            ]
+        },
+        {
+            "tag": "nowlocation",
+            "patterns": [
+                "Where am I now?",
+                "What is the location where I am standing?",
+                "Where am I standing?"
+
+            ],
+            "responses": [
+                "You are in the CSE Department right now. The department is on the 3rd floor of tower 3",
+                "You are in tower 3 3rd floor in the CSE department",
+                "Right now, you are in the CSE Department. The department is located on the third floor of tower 3.",
+                "You are now in the CSE Department. The department is situated on tower 3's third floor."
+            ]
+        },
+        {
+            "tag": "AdminOffice",
+            "patterns": [
+                "Where is the Admin office?",
+                "How can I go to the admin office?",
+                "Do you know the location of the admin office?",
+                "Tell me how to go to the admin office?"
+            ],
+            "responses": [
+                "Take the lift and go to the ground floor. Walk towards the plaza and the admin office will be situated right across the road on your left",
+                "The admin office is the white building situated on the opposite side of the road of the towers. Walk to the lift and go to the ground floor. As you walk toward the plaza, the administrative office is direct across the street on your left."
+            ]
+        },
+        {
+            "tag": "CyberRangeLoc",
+            "patterns": [
+                "Where is the cyber range?",
+                "How can i go to the cyber range?",
+                "Do you know the location of the cyber range?",
+                "What is the full form of CSE?"
+            ],
+            "responses": [
+                "CyberRange is at tower 3, 3rd floor.",
+                "It is located on the 3rd floor of the ECE building, tower 3"
+            ]
+        },
+        {
+            "tag": "CSE",
+            "patterns": [
+                "What is the full form of CSE?",
+                "What does CSE stands for?",
+                "What is the full meaning of CSE?"
+
+            ],
+            "responses": [
+                "The full form of CSE is Computer Science & Engineering.",
+                "CSE stands for Computer Science & Engineering",
+                "It means Computer Science & Engineering", "Its full form is Computer Science & Engineering"
+            ]
+        },
+        {
+            "tag": "BatchDegreeYear",
+            "patterns": [
+                "How many years are required to get my Bachelor's degree?",
+                "For how many years I have to study to get my Bachelor's degree?",
+                "Is it possible to get my Bachelor's degree within 4 to 6 years?",
+                "What is the range of the year I have to study to get my Bachelor's degree?"
+            ],
+            "responses": [
+                "The BSC requires 4 years to complete.",
+                "You can complete BSC in 4 years,  but it might take up to 6 years depending on the result.",
+                "The BSC will take 4-6 years depending how on your performance or your certain decisions."
+            ]
+        },
+        {
+            "tag": "PostGradCourse",
+            "patterns": [
+                "What are the offered courses for Postgraduates in MIST?",
+                "How many courses do MIST offer for the post graduates?",
+                "What is the total number of courses for Postgraduates in MIST?",
+                "Name the courses available in MIST for post graduates",
+                "Can you tell me the name of Postgraduate courses?"
+            ],
+            "responses": [
+                "MIST offers M.Sc./M.Engg./Ph.D. in CSE, CE, EECE, ME, AE, NSE and in NAME departments, M.Sc./M.Engg. in BME and M.Phil. in Mathematics, Physics & Chemistry.",
+                "MIST provides Ph.D., M.Sc./M.Engg., and M.Phil. degrees in the departments of CSE, CE, EECE, ME, AE, NSE, and NAME as well as M.Sc./M.Engg. in BME and M.Phil. in Math, Physics, and Chemistry.",
+                "MIST provides M.Sc./M.Engg./Ph.D. in the departments of CSE, CE, EECE, ME, AE, NSE, and NAME as well as M.Sc./M.Engg. in BME and M.Phil. in Mathematics, Physics, and Chemistry."
+            ]
+        },
+        {
+            "tag": "UnderGradCourse",
+            "patterns": [
+                "What are the offered courses for Undergradiates in MIST?",
+                "How many courses do MIST offer for Undergraduates?",
+                "Name the courses available in MIST for undergraduates",
+                "Can you tell me the name of the undergraduate courses?",
+                "What is the total number of courses MIST offers for undergraduates?"
+            ],
+            "responses": [
+                "MIST offers BSc for a total of 12 departments namely CSE, EECE, CE, ME, AE, NSE, NAME, IPE, EWCE, PME, BME, and Architecture.",
+                "The 12 departments that makeup MIST's BSc program are CSE, EECE, CE, ME, AE, NSE, NAME, IPE, EWCE, PME, BME, and Architecture.",
+                "A total of 12 departments, including CSE, EECE, CE, ME, AE, NSE, NAME, IPE, EWCE, PME, BME, and Architecture, provide BSc degrees through MIST."
+            ]
+        },
+        {
+            "tag": "applicantsBsc",
+            "patterns": [
+                "Who can apply for the Bachelor's degree courses?",
+                "Who can apply for the undergraduate courses?",
+                "Who are the applicants for Bachelors courses?",
+                "Who are the applicants for undergraduates courses?",
+                "What are the types of applicants for Bachelors degree courses? ",
+                "What are the types of applicants for undergraduate courses?",
+                "Name the type of applicants for Bachelors degree courses?",
+                "Name the type of applicants for undergraduate degree courses?",
+                "How many types of applicants are there for Bachelors degree courses?",
+                "How many types of applicants are there for undergraduate degree courses?"
+            ],
+            "responses": [
+                "2 types of applicants can apply in MIST they are students that have passed the Higher Secondary School Certificate Examination in Science Group in the current year and any students of International Applicant residing outside the country",
+                "Students who passed the current year's Higher Secondary School Certificate Examination in the Science Group or any students of International Applicants who are abroad are the 2 types of applicants eligible for MIST’s undergraduate course",
+                " MIST offers BSc degree to 2 types of applicants- 1. Students who passed the Higher Secondary School Certificate Examination in the Science Group last year 2. any foreign applicants who live abroad"
+            ]
+        },
+        {
+            "tag": "seatsavailBsc",
+            "patterns": [
+                "What is the total number of seats available in MIST for a Bachelors degree?",
+                "What is the total number of seats available in MIST for an undergraduate degree ?",
+                "How many seats are available in MIST for pursuing a Bachelors degree?",
+                "What is the total seat capacity in MIST for a Bachelors degree ?"
+            ],
+            "responses": [
+                "A total of 570 seats are available for Bachelor's degrees in MIST taking all departments' seat availability into account.",
+                " When all departments' available seats are taken into consideration, there are 570 seats available for Bachelor's degrees in MIST.",
+                "Taking into account the seat availability across all departments, there are 570 seats available for Bachelor's degrees in MIST."
+            ]
+        },
+        {
+            "tag": "qualificationLocal",
+            "patterns": [
+                "What is the minimum qualification to apply for a Bangladeshi student for a Bachelors degree?",
+                "List the qualifications of a local candidate appearing for an admission exam in MIST ?",
+                "What should be the minimum requirements for a local candidate to apply for the admission exam in MIST?",
+                "What are the requirements a Bangladeshi student should have apply for the exam in MIST?",
+                "List the qualifications of an international candidate appearing for an admission exaam in MIST?",
+                "What should be the minimum requirements for a foreign candidtae to apply for the admission exam in MIST?",
+                "What are the requirements an international student should have to apply for the exam in MIST",
+                "What is the minimum qualification to apply for a Bangladeshi student for a Bachelor's degree?"
+            ],
+            "responses": [
+                "For Bangladeshi students, the applicant must obtain a minimum total grade point of 17 in four subjects (Mathematics, Physics, Chemistry, and English) in HSC and a minimum GPA of 4.00 without the fourth subject in the Science group for SSC. For International Curriculum students,  the applicant must have a minimum of two ‘B’ grades and one ‘C’ grade in Mathematics, Physics, and Chemistry at GCE ‘A’ Level and a minimum ‘B’ grade in five subjects including Mathematics, Physics, Chemistry, and English in GCE ‘O’ Level.",
+                "Students from Bangladesh must have a minimum cumulative grade point average of 17 in four subjects (Mathematics, Physics, Chemistry, and English) in the HSC and a minimum GPA of 4.00 in the Science group in the SSC exam. For students enrolled in the International Curriculum, the candidate must have earned at least two B grades in each of mathematics, physics, and chemistry at the GCE A Level and at least one C grade in each of those subjects at the GCE O Level. For the Bachelor degree the BME department has a total of 40 seats available."
+            ]
+        },
+        {
+            "tag": "HSC",
+            "patterns": [
+                "What is the minimum total grade to obtain in HSC to qualify for the admission exam?",
+                "How many grades need to be obtained in HSC to qualify for the admission exam?",
+                "How many grades need to be received in HSC to fulfill the requirements for an admission exam candidate?",
+                "What are the subjects required to have in HSC to apply for the MIST admission exam?",
+                "How many compulsory subjects are required to be present in the HSC certificate to be a candidate for the admission exam?",
+                "Name the subjects in the HSC curriculum that are compulsory to be taken for applying to MIST?",
+                "List the subjects and the minimum grade required in HSC to appear in MIST admission exam?"
+            ],
+            "responses": [
+                "In addition to an A+ in physics, chemistry, math, and English, you need a GPA of 5 in both the HSC and SSC.",
+                "A+ in physics, chemistry, math, and English are required in addition to a GPA of 5 in both the HSC and SSC.",
+                "Along with an A+ in physics, chemistry, math, and English, you also need a GPA of 5 in both the HSC and SSC.",
+                "Both HSC and SSC require a GPA of 5 and an A+ in Physics, Chemistry, Mathematics, and English."
+            ]
+        },
+        {
+            "tag": "SSC",
+            "patterns": [
+                "Name the minimum GPA required to pass the SSC exam to be an applicant for MIST admission exam?",
+                "Name the compulsory group of SSC needed to apply for the admission exam in MIST",
+                "What is the minimum GPA required in SSC exam to be an applicant for the MIST admission exam?",
+                "What is the mandatory group of SSC that is required to apply for MIST admission exam?"
+            ],
+            "responses": [
+                "The applicant must have passed the examination in Science Group obtaining a minimum GPA of 4.00 (without fourth subject) on a scale of 5.0. Only the applicants who passed SSC or Equivalent Examination.",
+                "The candidate must have obtained a minimum GPA of 4.00 (without a fourth subject) on a scale of 5.0 after passing the Science Group examination. Only those candidates who passed the SSC or a comparable exam.",
+                "A minimum GPA of 4.00 (without a fourth subject) on a scale of 5.0 is required for the applicant to have passed the Science Group examination in SSC or a similar exam."
+            ]
+        },
+        {
+            "tag": "ALevel",
+            "patterns": [
+                "How many grades need to be received in CGE 'A' level to fulfill the requirements for an admission exam candidate?",
+                "What are the subjects required to have in CGE 'A' level to apply for the MIST admission exam?",
+                "How many compulsory subjects are required to be present in the CGE 'A' level certificate to be a candidate for the admission exam?",
+                "Name the subjects in the CGE 'A' level curriculum that are compulsory to be taken for applying to MIST",
+                "List the subjects and the minimum grade required in CGE 'A' level to appear in the MIST admission exam"
+            ],
+            "responses": [
+                "The applicant who passed in the current and previous year must have minimum two B grades and one C grade in Mathematics, Physics, and Chemistry in GCE A Level. Applicants interested in Biomedical Engineering must have Biology at HSC or equivalent level with a minimum grade point of A- / GCE A or equivalent level with a minimum grade point of C.",
+                "The applicant must have at least two 'B' grades and one 'C' grade in Mathematics, Physics, and Chemistry at GCE 'A' Level in the current and previous academic year. Biology at the HSC or comparable level with a minimum grade point of A- or GCE A or equivalent level with a minimum grade point of C is required of applicants interested in biomedical engineering."
+            ]
+        },
+        {
+            "tag": "OLevel",
+            "patterns": [
+                "What is the minimum total grade to obtain in CGE 'O' level to qualify for the admission exam?",
+                "How many grades need to be received in CGE 'O' level to fulfill the requirements for an admission exam candidate?",
+                "What are the subjects required to have in CGE 'O' level to apply for the MIST admission exam?",
+                "How many compulsory subjects are required to be present in the CGE 'O' level certificate to be a candidate for the admission exam?",
+                "Name the subjects in the CGE 'O' level curriculum that are compulsory to be taken for applying to MIST",
+                "List the subjects and the minimum grade required in CGE 'O' level to appear in the MIST admission exam"
+            ],
+            "responses": ["The applicant must have earned a minimum B grade in five subjects—including mathematics, physics, chemistry, and English—at the GCE O Level in both the current and preceding academic year.",
+                "The applicant who passed in the corresponding current and previous year must have qualified with a minimum B grade in five subjects including Mathematics, Physics, Chemistry, and English in GCE O Level."
+            ]
+        },
+        {
+            "tag": "BMEapply",
+            "patterns": [
+                "Is there any special requirement for any particular department?",
+                "Does a specific department have any unique qualifications?",
+                "Are there particular requirements for any given department?",
+                "Is there a unique necessity for a certain department?"
+            ],
+            "responses": ["Apparently, BME requires A+ in biology in both SSC & HSC",
+                "Apparently, BME requires both SSC and HSC biology A+ grades.",
+                "It seems that BME requires an A+ in biology for both SSC and HSC.",
+                "Biology A+ in both the SSC and HSC is reportedly a requirement for BME.",
+                "It appears that BME requires an A+ in biology for both SSC and HSC."
+            ]
+        },
+        {
+            "tag": "Units",
+            "patterns": [
+                "How many units are there in the admission exam?",
+                "What are the units specified in the admission exam?",
+                "What is the total number of units in the admission exam?",
+                "List the name of the units in admission exam",
+                "In how many units is the admission exam divided?",
+                "Name the units present in the admission process of MIST"
+            ],
+            "responses": ["There are 2 units in MIST admission exam: Engineering & Architecture.",
+                "The MIST admission test consists of two units: engineering and architecture.",
+                "Engineering and Architecture are the two sections of the MIST entrance test.",
+                "Engineering and Architecture are the two subjects covered in the MIST admission test."
+            ]
+        },
+        {
+            "tag": "AUnit",
+            "patterns": [
+                "How many departments are present in unit A?",
+                "List the name of the departments in Unit A",
+                "Name the departments present in Unit A",
+                "What is the total number of departments in Unit A?"
+
+            ],
+            "responses": [
+                "There are a total of 11 departments in A unit namely CSE, EECE, CE, NAME, NSE, BME, IPE, PME, EWCE, AE and ME department.",
+                " The CSE, EECE, CE, NAME, NSE, BME, IPE, PME, EWCE, AE, and ME departments make up the total of 11 departments in A unit.",
+                "The 11 departments that make up A unit are CSE, EECE, CE, NAME, NSE, BME, IPE, PME, EWCE, AE, and ME"
+            ]
+        },
+        {
+            "tag": "BUnit",
+            "patterns": [
+                "How many departments are present in unit B?",
+                "What are the departments that fall in the Unit B category?",
+                "List the name of the departments in Unit B",
+                "Name the departments present in Unit B",
+                "What is the total number of departments in Unit B?"
+            ],
+            "responses": [
+                "The Architecture Department is the sole department that makes up the B unit",
+                " There is only 1 department in the B unit, and that department is the Architecture Department.",
+                "The B unit consists of only 1 department which is the Architecture Department."
+            ]
+        },
+        {
+            "tag": "CSEseatavail",
+            "patterns": [
+                "What is the total number of seats available for the CSE department for the Bachelor's degree?",
+                "What is the total number of seats available for the CSE department for an undergraduate degree?",
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the CSE department?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the CSE department?"
+
+            ],
+            "responses": [
+                "A total of 60 seats are available for the CSE department for the Bachelor's degree.",
+                "For the Bachelor's degree, the CSE department has a total of 60 seats available.",
+                "The CSE department has a total of 60 seats available for the Bachelor's program."
+            ]
+        },
+        {
+            "tag": "EECEseatavail",
+            "patterns": [
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the EECE department?",
+                "What is the total number of seats available for the EECE department for the Bachelor's degree?",
+                "What is the total number of seats available for the EECE department for an undergraduate degree?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the EECE department?"
+            ],
+            "responses": [
+                "A total of 60 seats are available for the EECE department for the Bachelor's degree.",
+                "For the Bachelor's degree, the EECE department has a total of 60 seats available.",
+                "The EECE department has a total of 60 seats available for the Bachelor's program."
+            ]
+        },
+        {
+            "tag": "MEseatavail",
+            "patterns": [
+                "What is the total number of seats available for the ME department for the Bachelor's degree?",
+                "What is the total number of seats available for the ME department for an undergraduate degree?",
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the ME department?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the ME department?"
+            ],
+            "responses": [
+                "A total of 60 seats are available for the ME department for the Bachelor's degree.",
+                "For the Bachelor's degree, the ME department has a total of 60 seats available.",
+                "The ME department has a total of 60 seats available for the Bachelor's program."
+            ]
+        },
+        {
+            "tag": "EWCEseatavail",
+            "patterns": [
+                "What is the total number of seats available for the EWCE department for the Bachelor's degree?",
+                "What is the total number of seats available for the EWCE department for an undergraduate degree?",
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the EWCE department?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the EWCE department?"
+            ],
+            "responses": [
+                "A total of 60 seats are available for the EWCE department for the Bachelor's degree.",
+                "For the Bachelor's degree, the EEWE department has a total of 60 seats available.",
+                "The EWCE department has a total of 60 seats available for the Bachelor's program."
+            ]
+        },
+        {
+            "tag": "AEseatavail",
+            "patterns": [
+                "What is the total number of seats available for the AE department for the Bachelor's degree?",
+                "What is the total number of seats available for the AE department for an undergraduate degree?",
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the AE department?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the AE department?"
+            ],
+            "responses": [
+                "A total of 50 seats are available for the AE department for the Bachelor's degree.",
+                "For the Bachelor's degree, the AE department has a total of 50 seats available.",
+                "The AE department has a total of 50 seats available for the Bachelor's program."
+            ]
+        },
+        {
+            "tag": "NAMEseatavail",
+            "patterns": [
+                "What is the total number of seats available for the NAME department for the Bachelor's degree?",
+                "What is the total number of seats available for the NAME department for an undergraduate degree?",
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the NAME department?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the NAME department?"
+            ],
+            "responses": [
+                "A total of 40 seats are available for the NAME department for the Bachelor's degree.",
+                " For the Bachelor's degree, the NAME department has a total of 40 seats available.",
+                "The NAME department has a total of 40 seats available for the Bachelor's program."
+            ]
+        },
+        {
+            "tag": "CEseatavail",
+            "patterns": [
+                "What is the total number of seats available for the CE department for the Bachelor's degree?",
+                "What is the total number of seats available for the CE department for an undergraduate degree?",
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the CE department?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the CE department?"
+            ],
+            "responses": [
+                "A total of 60 seats are available for the CE department for the Bachelor's degree.",
+                " For the Bachelor's degree, the CE department has a total of 60 seats available.",
+                "The CE department has a total of 60 seats available for the Bachelor's program."
+            ]
+        },
+        {
+            "tag": "IPEseatavail",
+            "patterns": [
+                "What is the total number of seats available for the IPE department for the Bachelor's degree?",
+                "What is the total number of seats available for the IPE department for an undergraduate degree?",
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the IPE department?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the IPE department?"
+            ],
+            "responses": [
+                "A total of 50 seats are available for the IPE department for the Bachelor's degree.",
+                " For the Bachelor's degree, the IPE department has a total of 50 seats available.",
+                "The IPE department has a total of 50 seats available for the Bachelor's program."
+            ]
+
+        },
+        {
+            "tag": "BMEseatavail",
+            "patterns": [
+                "What is the total number of seats available for the BME department for the Bachelor's degree?",
+                "What is the total number of seats available for the BME department for an undergraduate degree?",
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the BME department?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the BME department?"
+            ],
+            "responses": [
+                "A total of 40 seats are available for the BME department for the Bachelor's degree.",
+                " For the Bachelor's degree, the BME department has a total of 40 seats available.",
+                "The BME department has a total of 40 seats available for the Bachelor's program."
+            ]
+        },
+        {
+            "tag": "NSEseatavail",
+            "patterns": [
+                "What is the total number of seats available for the NSE department for the Bachelor's degree?",
+                "What is the total number of seats available for the NSE department for an undergraduate degree?",
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the NSE department?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the NSE department?"
+            ],
+            "responses": [
+                "A total of 40 seats are available for the NSE department for the Bachelor's degree.",
+                "For the Bachelor's degree, the NSE department has a total of 40 seats available.",
+                "The NSE department has a total of 40 seats available for the Bachelor's program."
+            ]
+        },
+        {
+            "tag": "PMEseatavail",
+            "patterns": [
+                "What is the total number of seats available for the PME department for the Bachelor's degree?",
+                "What is the total number of seats available for the PME department for an undergraduate degree?",
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the PME department?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the PME department?"
+            ],
+            "responses": [
+                "A total of 25 seats are available for the PME department for the Bachelor's degree.",
+                "For the Bachelor's degree, the NAME department has a total of 25 seats available.",
+                "The PME department has a total of 25 seats available for the Bachelor's program."
+            ]
+        },
+        {
+            "tag": "ARCHseatavail",
+            "patterns": [
+                "What is the total number of seats available for the ARCH department for the Bachelor's degree?",
+                "What is the total number of seats available for the ARCH department for an undergraduate degree?",
+                "How many seats are available in MIST for pursuing a Bachelor's degree in the ARCH department?",
+                "What is the total seat capacity in MIST for a Bachelor's degree in the ARCH department?"
+            ],
+            "responses": [
+                "A total of 25 seats are available for the Architecture department for the Bachelor's degree.",
+                "For the Bachelor's degree, the Architecture department has a total of 25 seats available.",
+                "The Architecture department has a total of 25 seats available for the Bachelor's program."
+            ]
+        },
+        {
+            "tag": "applyApplication",
+            "patterns": [
+                "How to apply for the application of Admission Test in MIST?",
+                "Is there any online system to apply for the application of Admission Test in MIST?",
+                "How can I submit an application for the MIST Admission Test?",
+                "What is the process for applying to the MIST Admission Test?"
+            ],
+            "responses": [
+                "The applicants can apply through the online system for the Admission test in MIST.  No manual application will be accepted unless there is some system difficulty in the application process.",
+                " The applicants can use the online portal to register for the MIST Admission test. No manual application will be accepted unless there is an application process system issue.",
+                " The MIST Admission test is open to applicants who wish to apply online. Unless there is a system issue with the application process, no manual applications will be accepted."
+            ]
+        },
+        {
+            "tag": "AUnitCost",
+            "patterns": [
+                "What is the admission fee of A unit for an application for the admission exam?",
+                "What is the A unit's application fee to take the admissions test?",
+                "What is the cost of A unit's admission for submitting an application for the admission exam?",
+                "How much does it cost to apply to take the admissions test at A Unit?",
+                "What is the A unit's entrance fee for submitting an application for the admission exam?",
+                "What is the A unit's application fee to take the admissions test?",
+                "What is the cost of A unit's admission for submitting an application for the admission exam?"
+            ],
+            "responses": [
+                "An applicant needs to deposit Tk. 800 (Eight Hundred) for unit A",
+                "For unit A, an applicant must put down Tk. 800 (Eight Hundred).",
+                "For unit A, a deposit of Tk. 800 (Eight Hundred) is required."
+            ]
+        },
+        {
+            "tag": "BUnitCost",
+            "patterns": [
+                "What is the admission fee of the B unit for an application for the admission exam?",
+                "What is the B unit's application fee to take the admissions test?",
+                "What is the cost of B unit's admission for submitting an application for the admission exam?",
+                "How much does it cost to apply to take the admissions test at B Unit?",
+                "What is the B unit's entrance fee for submitting an application for the admission exam?",
+                "What is the B unit's application fee to take the admissions test?",
+                "What is the cost of B unit's admission for submitting an application for the admission exam?"
+            ],
+            "responses": [
+                "An applicant needs to deposit Tk 1000 (One Thousand) for unit B",
+                " For unit B, an applicant must put down Tk 1000 (One Thousand).",
+                " For unit B, a deposit of Tk 1000 (One Thousand) is required."
+            ]
+        },
+        {
+            "tag": "MISTTestablished",
+            "patterns": [
+                "When was MIST established?",
+                "When did MIST start operating?",
+                "When was MIST founded?",
+                "When did MIST "
+            ],
+            "responses": [
+                "MIST was established on 19 April 1998 by Honorable Prime Minister Sheikh Hasina.",
+                " On April 19, 1998, Honorable Prime Minister Sheikh Hasina established MIST.",
+                " Honorable Prime Minister Sheikh Hasina founded MIST on April 19, 1998.",
+                "Honorable Prime Minister Sheikh Hasina founded MIST on April 19th, 1998."
+            ]
+        },
+        {
+            "tag": "Clubs",
+            "patterns": [
+                "How many clubs are there in MIST and what are they?",
+                "In MIST, how many clubs are there?",
+                "What number of clubs does MIST have?",
+                "List the name of the clubs present in MIST.",
+                "There are how many clubs in MIST?"
+
+            ],
+            "responses": [
+                "There are a total of 13 clubs in MIST namely the Aeronautics club, Career club, Computer club, Debating club, Drama club, Einthoven club, Environment club, Photography club, Literature and Cultural club, Mathematics club, Innovation club, MOTO MIST club, and Robotics club.",
+                "The Aeronautics club, the Career Club, the Computer Club, the Debating club, the Drama club, the Einthoven club, the Environment club, the Photography club, the Literature and Cultural Club, the Mathematics club, the Innovation club, the MOTO MIST club, and the Robotics club are among the 13 clubs that make up MIST."
+            ]
+        },
+        {
+            "tag": "Hall",
+            "patterns": [
+                "Is MIST a residential institute?",
+                "MIST: Is it a residential school?",
+                "Does MIST have residence halls?",
+                "Is MIST a residence-style university?",
+                "Is MIST a residential university?"
+
+            ],
+            "responses": [
+                "MIST is a residential institute with only one Student Hall named Osmany Hall. It is an 8 storied building with female and male wings, each wing having a capacity of 262 students.",
+                "The lone student hall in the residential institute MIST is called Osmany Hall. It is an eight-story structure with separate wings for male and female students, each of which can accommodate 262 students. In MIST, there are two stationary stores. One is within the cafeteria, while the other is next to the administrative building."
+            ]
+        },
+        {
+            "tag": "Sports",
+            "patterns": [
+                "Does MIST have different sports competitions?",
+                "Does MIST host a variety of sporting events?",
+                "Are there various sporting events at MIST?",
+                "Do different sporting events take place at MIST?",
+                "Name some of the sports competitions held in MIST",
+                "Describe some of the sporting events that are held in MIST.",
+                "List a few sports events that are held in MIST.",
+                "Describe a few of the sporting events that take place at MIST.",
+                "Describe some of the athletic events that are held in MIST."
+            ],
+            "responses": [
+                "The Directorate of Students Welfare (DSW) facilitates various games and sports competitions for the students of MIST.  These Intra MIST events include Inter-Department Athletics Competition,  Inter Department Cricket Competition,  Inter-Department Football Competition,  Inter-Department Volleyball Competition, and Inter-Department Basketball Competition.",
+                "For the benefit of MIST students, the Directorate of Students Welfare (DSW) organizes a variety of sporting events like inter-departmental athletics, inter-departmental cricket, inter-departmental football, inter-departmental volleyball, and inter-departmental basketball.",
+                "MIST organizes a variety of sporting events for the students. The inter-departmental athletics competition, inter-departmental cricket competition, inter-departmental football competition, inter-departmental volleyball competition, and inter-departmental basketball competition are among several intra-MIST events."
+
+            ]
+        },
+        {
+            "tag": "Medical",
+            "patterns": [
+                "Is there any medical center in MIST?",
+                "Does MIST have a medical facility?",
+                "Is there a medical facility at MIST?",
+                "Do you know if MIST has a medical center?",
+                "Is there a hospital in MIST?",
+                "Where is the medical facility of MIST situated?",
+                "Where is the MIST medical facility located?",
+                "In what location does the MIST medical facility stand?",
+                "Where is the MIST medical center located?",
+                "How can I go to the medical facilty?",
+                "Where is the MIST medical institution located?"
+            ],
+            "responses": [
+                "MIST has a Medical Center” where students, faculties, and all staff of MIST can go for any health-related issues.  The Medical Center is situated on the 2nd Floor of the Admin Building.",
+                "Students, faculty, and any other MIST employees can go to the medical center at MIST for any health-related difficulties. The second floor of the administrative building is where the medical center is located.",
+                "There is a medical center at MIST where all MIST staff, faculty, and students can go for medical problems. The second floor of the administrative building houses the medical center."
+            ]
+        },
+        {
+            "tag": "Library",
+            "patterns": [
+                "Is there any library in MIST?",
+                "Does MIST have a library?",
+                "Is there a library at MIST?",
+                "Do you know if MIST has a library?",
+                "How can I go to the library?",
+                "Is there a library in MIST?",
+                "Where is the library of MIST situated?",
+                "Where is the MIST library located?",
+                "In what location does the MIST library stand?",
+                "Where is the MIST library located?",
+                "Where is the MIST library located?"
+            ],
+            "responses": [
+                "MIST has a Central Library situated on the 3rd Floor of the Admin Building.",
+                "On the third floor of the administrative building, MIST contains a Central Library.",
+                "On the third floor of the administrative building is where MIST's Central Library is located.",
+                "The third floor of the administrative building houses the Central Library of MIST."
+            ]
+        },
+        {
+            "tag": "Cafeteria",
+            "patterns": [
+                "Is there any cafetreria in MIST?",
+                "Does MIST have a cafetreria?",
+                "Is there a cafetreria at MIST?",
+                "Do you know if MIST has a cafetreria?",
+                "Is there a cafetreria in MIST?",
+                "Where is the cafetreria of MIST situated?",
+                "Where is the MIST cafetreria located?",
+                "How can I go to the cafeteria?",
+                "In what location does the MIST cafetreria stand?",
+                "Where is the MIST cafetreria located?",
+                "Where is the MIST cafetreria located?"
+
+            ],
+            "responses": [
+                "MIST offers Cafeteria facilities for the students. The New Café MIST is situated on the 1st floor of Tower 4",
+                "MIST provides its students with cafeteria services. The New Café MIST is located on Tower 4 s first floor.",
+                "MIST provides cafeteria services to its students. On the first floor of Tower 4, you'll find The New Café MIST.",
+                "For the benefit of its students, MIST provides a cafeteria. In Tower 4, on the first floor, is The New Café MIST."
+            ]
+        },
+        {
+            "tag": "Stationery",
+            "patterns": [
+                "Is there any stationery shop in MIST?",
+                "Does MIST have a stationery shop?",
+                "Is there a stationery shop at MIST?",
+                "Do you know if MIST has a stationery shop?",
+                "Is there a stationery shop in MIST?",
+                "Where is the stationery shop of MIST situated?",
+                "Where is the MIST stationery shop located?",
+                "In what location does the MIST stationery shop stand?",
+                "Where is the MIST stationery shop located?",
+                "Where is the MIST stationery shop located?",
+                "How can I go to the stationery shop?"
+
+            ],
+            "responses": [
+                "There are two stationery shops in MIST. One is located beside the admin building and another inside the cafeteria.",
+                " In MIST, there are two stationary stores. One is within the cafeteria, while the other is next to the administrative building.",
+                " Two stationary stores may be found in MIST. One is next to the administrative building, and the other is inside the cafeteria.",
+                " MIST has two places to buy stationery. Both are in the cafeteria and one is next to the administrative building."
+            ]
+        },
+        {
+            "tag": "Scholarship",
+            "patterns": [
+                "Is there any scholarship given by MIST to the student?",
+                "Does MIST offer any scholarships to its students?",
+                "Is the student eligible for any scholarships offered by MIST?",
+                "Does MIST offer students any scholarships?",
+                "Name some of the scholarships given by MIST to its students",
+                "Describe a few of the scholarships offered to MIST students.",
+                "List a few of the scholarships MIST offers ",
+                "List a few scholarships that MIST offers its students.",
+                "Describe a few of the scholarships MIST offers to its students.",
+                "Describe a few of the scholarships offered to MIST students.",
+                ""
+            ],
+            "responses": [
+                "MIST offers 5 types of scholarships to its students namely MIST Scholarship,  Osmany Memorial Trust Scholarship, Chief of Army Staff Scholarship, Chief of Naval Staff Scholarship and Chief Of Air Staff Scholarship.",
+                "MIST provides its students with five different types of scholarships: the MIST Scholarship, the Osmany Memorial Trust Scholarship, the Chief of Army Staff Scholarship, the Chief of Naval Staff Scholarship, and the Chief of Air Staff Scholarship.",
+                "A total of five different scholarship options are available to MIST students: the MIST Scholarship, the Osmany Memorial Trust Scholarship, the Chief of Army Staff Scholarship, the Chief of Naval Staff Scholarship, and the Chief of Air Staff Scholarship."
+            ]
+        },
+        {
+            "tag": "Stipend",
+            "patterns": [
+                "Is there any stipend or financial aid program given by MIST to the student?",
+                "Does MIST offer any stipend or financial aid program to its students?",
+                "Is the student eligible for any stipend or financial aid program offered by MIST?",
+                "Does MIST offer students any stipend or financial aid program?",
+                "Name some of the stipend or financial aid program given by MIST to its students",
+                "Describe a few of the stipend or financial aid program offered to MIST students.",
+                "List a few of the stipend or financial aid program MIST offers ",
+                "List a few stipends or financial aid programs that MIST offers its students.",
+                "Describe a few of the stipend or financial aid program MIST offers to its students.",
+                "Describe a few of the stipend or financial aid programs offered to MIST students."
+
+            ],
+            "responses": [
+                "MIST offers 3 types of stipends or financial aid to its students namely the MIST Stipend, the Buro Bangladesh Stipend, and the Chief of Army Staff Stipend.",
+                "The MIST Stipend, the Buro Bangladesh Stipend, and the Chief of Army Staff Stipend are the three different types of financial aid that MIST provides to its students.",
+                "MIST provides its students with three different forms of stipends or financial aid: the MIST Stipend, the Buro Bangladesh Stipend, and the Chief of Army Staff Stipend."
+            ]
+        },
+        {
+            "tag": "ChairmanCouncil",
+            "patterns": [
+                "Who is the chairman of the council of MIST?",
+                "Who is the MIST council's chairman?",
+                "Who is in charge of the MIST Council?",
+                "The MIST council's chairman is who?",
+                "Name the MIST council's chairman",
+                "Identify the head of the MIST council.",
+                "Who will be the head of the MIST council?"
+            ],
+            "responses": [
+                "Hon’ble Minister of Ministry of Education is the chairman of the council of MIST.",
+                "The chairman of the MIST council is the honorable minister of education.",
+                "The MIST council is presided over by the honorable minister of education.Any time!"
+            ]
+        },
+        {
+            "tag": "ChairmanGoverning",
+            "patterns": [
+                "Who is the chairman of the Governing Body of MIST?",
+                "Who is the MIST Governing Body's chairman?",
+                "Who is in charge of the MIST Governing Body?",
+                "The MIST Governing Body's chairman is who?",
+                "Name the MIST Governing Body's chairman",
+                "Identify the head of the MIST Governing Body."
+
+            ],
+            "responses": [
+                "Commandant, MIST, and Engineer in Chief, AHQ - Chairman (whoever is the senior) is the chairman of the governing body of MIST",
+                "The head of MIST's governing body is the Commandant, MIST, and Engineer in Chief, AHQ - Chairman (whoever is the senior).",
+                "The head of MIST's governing body is either the commandant or the engineer in chief of AHQ, whichever is the more senior."
+            ]
+        },
+        {
+            "tag": "ChairmanAcademic",
+            "patterns": [
+                "Who is the chairman of the Academic Council of MIST?",
+                "Who is the MIST Academic Council's chairman?",
+                "Who is in charge of the MIST Academic Council?",
+                "The MIST Academic Council's chairman is who?",
+                "Name the MIST Academic Council's chairman",
+                "Identify the head of the MIST Academic Council.",
+                "Who will be the head of the MIST Academic Council?"
+            ],
+            "responses": [
+                "Commandant MIST is the chairman of the academic council of MIST.",
+                "The commandant of MIST serves as the head of its academic council.",
+                "The head of MIST's academic council is known as the Commandant.",
+                "MIST's academic council is presided over by the commandant."
+            ]
+        }
+
+
+    ]
+}
